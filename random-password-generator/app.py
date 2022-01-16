@@ -4,7 +4,6 @@ import random
 import pyperclip
 from tkinter.messagebox import askokcancel, showinfo, WARNING
 
-
 randomise = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWYZ1234567890;:,.+-=~#'
 
 class Window():
@@ -98,14 +97,7 @@ class Window():
         tkinter.Button(frame, text='Copy', command=copyPWD).grid(column=0, row=2)
         tkinter.Button(frame, text='Close', command= lambda: frame.destroy()).grid(column=2, row=2)
 
-
-
-
-
-
 app = Window(tkinter.Tk(), "Random Password Generator")
-
-
 
 randomise = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWYZ1234567890;:,.+-=~#'
 print("".join([random.choice(randomise) for x in range(10)]))
